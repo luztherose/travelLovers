@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Lovers Reservations</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500|Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/navagation.css">
+    <link rel="stylesheet" href="CSS/reservations.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <p><a href="index.html"><img src="images/companyLogo.png" alt="logo company"   id="logo"></a></p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li class="rigth-space"><a href="findUs.html">Find us</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <h1>Make Your Reservation Today</h1>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" class="input" placeholder="Luz"><br>
+                <label for="last-name">Last Name:</label>
+                <input type="text" class="input linear" placeholder="Smith"><br>
+                <label for="email">Email:</label>
+                <input type="email"required class="input" placeholder="luzsmith@gmail.com" > <br>
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" class="input phone-number" placeholder="555-555-555"><br>
+                <label for="numberOfGuests">Number of Guests:</label>
+                <input type="number" class="input guets"><br>
+                <label for="destion">Country of destination:</label>
+                <select name="" id="countries" class="countries">
+                    <option value="Canada">Canada</option>
+                    <option value="The United States">The United States</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Dominican Republic">Dominican Republic</option>
+                    <option value="France">France</option>
+                    <option value="China">China</option>
+                    <option value="India">India</option>
+                </select></p>
+                <label for="departure">Departure Date:</label>
+                <input type="date" class="input depart"><br>
+                <label for="departure">Return Date:</label>
+                <input type="date" class="input date"><br>
+                <p class="insurance"> Do you need extra insurance: <input type="radio" name="insurance" value="y">Yes
+                    <input type="radio" name="insurance" value="n">No
+                </p>
+                <h2>Payment</h2>
+                <label for="name">Name of Cardholder:</label>
+                <input type="text" class="input card" placeholder="Luz Smith"><br>
+                <label for="card ">Credit Card Number:</label>
+                <input type="number" class="input card"><br>
+                <label for="Expiration">Expiration Date:</label>
+                <input type="date" class="input date"><br>
+
+                <h2>Help us bringing you a better Service</h2>
+                <p>Comment: <br> <textarea cols="50" rows="10"></textarea> </p>
+                <button type="Submit" value="Submit Query">Submit</button>
+            </form>
+                <h2 class="nex-trip-heading">Get inspiration for your next trip </h2>
+                <div class="next-trip">
+                    <div>
+                        <img src="images/reservation1.jpg" alt="">
+                        <p class="cities">Las Vegas, U.S</p>
+                    </div>
+                    <div>
+                        <img src="images/reservation2.jpg" alt="">
+                        <p class="cities">Punta Cana, RD</p>
+                    </div>
+                    <div>
+                        <img src="images/franceLouvreMuseum.jpg" alt="">
+                        <p class="cities">Paris, France</p>
+                    </div>
+                    <div>
+                        <img src="images/eiffelTower.jpg" alt="">
+                        <p class="cities">Paris, France</p>
+                    </div>
+                    <div>
+                        <img src="images/espanacathe.jpg " alt="">
+                        <p class="cities">Barcelona, Spain</p>
+                    </div>
+                    <div>
+                        <img src="images/amsterdamCanals.jpg" alt="">
+                        <p class="cities">Amsterdam</p>
+                    </div>
+            </div>
+        </main>
+        <footer>
+            <span class="contact-icons">
+                <a href="https://www.facebook.com/"><img src="images/facebook.jpg" alt="Facebook Homepage" width="60px"
+                        height="60px"></a>
+                <a href="https://www.instagram.com/"><img src="images/instagram.jpg" alt="Instagram Homepage" width="60px"
+                        height="60px"></a>
+                <a href="https://twitter.com/home"><img src="images/twitter.jpg" alt="Twitter Homepage" width="60px"
+                        height="60px"></a>
+                <a href="https://github.com/"><img src="images/github.jpg" alt="Github Homepage" width="60px"
+                        height="60px"></a>
+            </span>
+            <p> Copyright &copy; 2020 Travel Lovers. All Rights Reserved.</p>
+        </footer> 
+</body>
+</html>

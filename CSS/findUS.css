@@ -1,0 +1,49 @@
+#wrapper {
+    width: 1200px;
+    margin: auto;
+}
+body {
+    font-family:'Montserrat' ;
+    font-size: 20px;
+    color:#4A455C;
+
+}
+h1 {
+    font-family: 'Cormorant Garamond';
+    font-size: 45px;
+    text-align: center;
+    padding-right: 120px;
+    padding-bottom: 40px;
+    padding-top: 80px;
+    color: blue;
+    box-shadow:10px 10px 10px 0px rgb(248, 248, 118);
+}
+.bold {
+    font-weight: bold;
+}
+h2 {
+    font-size: 35px;
+    text-align: center;
+}
+.luz-section table {
+    font-weight: bold;
+    padding-top: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+
+}
+.luz-section img {
+    padding-top: 80px;
+}
+
+.planners  {
+    display: flex;
+    margin-bottom: 40px;
+}
+.planners:first-child {
+    margin-right: 20px;
+}
+.luz-section {
+    display: flex;
+    justify-content: center;
+}

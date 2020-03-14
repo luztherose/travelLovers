@@ -1,0 +1,81 @@
+
+body {
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+h1 {
+    font-family: 'Cormorant Garamond';
+    font-size: 60px;
+    text-align: center;
+    color: blue;
+}
+
+h2 {
+    color: #4A455C;
+    font-weight: bolder;
+}
+.nex-trip-heading {
+    text-align: center;
+    margin-top: 40px;
+}
+form {
+    text-align: center;
+    background-color: rgb(247, 206, 200);
+    padding: 50px 0px;
+}
+label {
+    margin-right: 90px;
+    padding:  15px;
+}
+.input, select {
+    width: 250px;
+    height: 25px;
+    margin-left: 20px;
+}
+.linear {
+    margin-right: 48px;
+}
+.phone-number {
+    margin-right: 98px;
+}
+.guets {
+    margin-right: 130px;
+}
+.depart {
+    margin-right: 105px;
+}
+.date {
+    margin-right: 85px;
+}
+.card {
+    margin-right: 145px;
+}
+.countries {
+    margin-right: 178px;
+    height: 40px;
+}
+.insurance {
+    margin-right: 160px;
+}
+button {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+}
+.next-trip img {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+}
+.next-trip {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin-left: 150px;
+}
+.cities {
+    color: #4A455C;
+    font-weight: bolder;
+    font-size: 24px;
+}
