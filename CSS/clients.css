@@ -1,12 +1,16 @@
-table img {
+section img {
     width: 400px;
     height: 380px;
-    margin: 10px 20px;
+    margin: 10px 0px 10px 10%;
 }
-table {
-    margin-right: auto;
-    margin-left: auto;
+#central-image {
+    display: flex;
+    justify-content: center;
 }
+#central-image img {
+    margin-left: 4%;
+}
+
 h1 {
     font-family: 'Cormorant Garamond';
     font-size: 45px;
@@ -15,20 +19,83 @@ h1 {
     margin-bottom: -10px;
     color: blue;
     font-weight: bolder;
-    box-shadow:10px 10px 10px 0px rgb(201, 201, 199);
+    box-shadow:15px 10px 15px 0px rgb(201, 201, 199);
 }
-.central-row img {
+.secondSection img {
     border-radius: 250px;
     margin-bottom: 40px ;
 }
-#first-table img {
+#firstSectionImgs img {
     border-radius: 20px;
     
 }
-#last-table img {
+#thirdSection img {
     border-radius: 50px;
 }
-caption {
+.headerSection2 {
     font-size: 25px;
     color:#4A455C ;
+    text-align: center;
+}
+/* Making it Screens friendly */
+@media(max-width:600px) {
+    #firstSectionImgs, .secondSection, #thirdSection {
+        display: inline-block;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 2rem;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-shadow:10px 10px 10px 0px rgb(201, 201, 199);
+    }
+    section img {
+        width: 90%;
+        margin: 10px 0px;
+        margin-left: 3%;
+    }
+    .headerSection2 {
+        font-size: 1rem;
+    }
+    .secondSection img {
+        width: 340px;
+        height: 340px;
+        border-radius: 180px;
+        margin-bottom: 40px ;
+    }
+    #central-image {
+        justify-content: flex-start;
+    }
+}
+
+@media(min-width:601px )and (max-width:1020px) {
+    h1 {
+        font-size: 2.7rem;
+    }
+    section img {
+        width: 80%;
+        margin-left: 12%;
+    }
+    #central-image {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+@media(min-width:1021px )and (max-width:1301px)  {
+    section img {
+        margin-left: 8%;
+    }
+    .centralImg {
+        margin-left: 32%;
+    }
+}
+@media(min-width:1302px )and (max-width:1437px)  {
+    section img {
+        margin-left: 2%;
+    }
+}
+@media(min-width:1438px )and (max-width:1741px)  {
+    section img {
+        margin-left: 5%;
+    }
 }
