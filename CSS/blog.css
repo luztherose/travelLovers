@@ -1,7 +1,6 @@
 #wrapper {
     width: 1400px;
     margin: auto;
-    /* height: 1200px; */
 }
 body {
     font-family:'Montserrat' ;
@@ -12,14 +11,14 @@ h1 {
     font-size: 45px;
     text-align: center;
     padding-top: 120px;
-    color: yellow;
+    color: #333333;
     font-weight: bolder;
-    /* box-shadow:10px 10px 5px 0px rgb(43, 41, 41); */
+    box-shadow:10px 10px 5px 0px rgb(179, 174, 174);
 }
 #first-section {
     width: 1400px;
     height: 300px;
-    background: repeating-radial-gradient(closest-side, #154de7, #ebf8e1, #f69d3c);
+    background: repeating-radial-gradient(closest-side, #789bf5, #f1f7ed, rgba(228, 222, 182, 0.473));
     background-size: cover;
     margin-bottom: 60px;
 }
@@ -64,4 +63,187 @@ date {
     color: #4A455C;
     font-size: 25px;
     font-weight: bold;
+}
+@media(max-width:600px) {
+    #wrapper {
+        width: 90%;
+        margin: auto;
+        /* height: 1200px; */
+    }
+    #first-section {
+        width: 100%;
+        height: 30%;
+        background: none;
+    }
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 30px;
+        box-shadow:10px 10px 5px 0px rgb(179, 174, 174);
+    }
+    #main-text {
+        width: 100%;
+        height: 100%;
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .first-column, .second-column {
+        margin: 20px 20px 10px 10px;
+        font-size: 1rem;
+    }
+    .second-column {
+        font-size: 1rem;
+        margin: 10px 10px 10px 0;
+        padding-top: 20px;
+    }
+    
+    #aside-content {
+        display: none;
+    }
+    #entry2 {
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 10px;
+        margin-top: 20%;
+        margin-bottom: 62%;
+    }
+    iframe {
+        width: 100%;
+    }
+    h2 {
+        color: #4A455C;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    date {
+        color: #4A455C;
+        font-size: 1.4rem;
+        margin: auto;
+    }
+    /* * { outline: 1px red solid !important; visibility: visible !important } */
+}
+
+@media(min-width:393px )and (max-width:406px) {
+    #entry2 {
+        margin-bottom: 50%;
+    }
+}
+@media(min-width:407px )and (max-width:466px) {
+    #entry2 {
+        margin-bottom: 30%;
+    }
+}
+@media(min-width:467px )and (max-width:475px) {
+    #entry2 {
+        margin-bottom: 20%;
+    }
+}
+@media(min-width:475px )and (max-width:600px) {
+    #entry2 {
+        margin-bottom: 10%;
+    }
+}
+/* /////////////////////////////////////////////////////////////////// */
+
+
+@media(min-width:601px )and (max-width:1020px) {
+    #wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    #first-section {
+        width: 100%;
+        background: repeating-radial-gradient(closest-side, #789bf5, #f1f7ed, rgba(228, 222, 182, 0.473));
+        background-size: cover;
+        margin-bottom: 60px;
+    }
+    #main-text {
+        width: 100%;
+        height: 100%;
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .first-column, .second-column {
+        width: 100%;
+        margin: 10px;
+        padding-top: 0;
+        font-size: 1.3rem;
+    }
+    #aside-content {
+        display: none;
+    }
+    #entry2 {
+        width: 100%;
+        font-size: 1.3rem;
+        margin-left: 10px;
+        margin-top: 4%;
+        margin-bottom: 40%;
+    }
+    iframe {
+        width: 100%;
+    }
+    /* * { outline: 1px red solid !important; visibility: visible !important }  */
+}
+@media(min-width:623px )and (max-width:700px) {
+    #entry2 {
+        margin-bottom: 26%;
+    }
+}
+@media(min-width:701px )and (max-width:780px) {
+    #entry2 {
+        margin-bottom: 20%;
+    }
+}
+@media(min-width:781px )and (max-width:900px) {
+    #entry2 {
+        margin-bottom: 10%;
+    }
+}
+@media(min-width:901px )and (max-width:1020px) {
+    #entry2 {
+        margin-bottom: 5%;
+    }
+}
+@media(min-width:1021px )and (max-width:1280px) {
+    #wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    #first-section {
+        width: 100%;
+        background-size: cover;
+        margin-bottom: 60px;
+    }
+    #main-text {
+        width: 100%;
+        height: 100%;
+    }
+    .first-column, .second-column {
+        width: 100%;
+        margin: 10px;
+        padding-top: 0;
+        font-size: 1rem;
+    }
+    .second-column {
+        margin-top: 9%;
+    }
+    
+    #aside-content {
+        display: none;
+    }
+    #entry2 {
+        width: 100%;
+        height: 80%;
+        font-size: 1rem;
+        margin-left: 10px;
+        margin-top: 4%;
+        /* margin-bottom: 5%; */
+    }
+    #entry2 iframe {
+        margin-left: 17%;
+    }
+* { outline: 1px red solid !important; visibility: visible !important } 
+
 }
