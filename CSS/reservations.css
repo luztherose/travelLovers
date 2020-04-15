@@ -79,3 +79,76 @@ button {
     font-weight: bolder;
     font-size: 24px;
 }
+
+@media(max-width:600px) {
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    form {
+        text-align: start;
+        font-size: 1.2rem;
+        padding: 20px 0px;
+        
+    }
+    .insurance {
+        margin-left: 0;
+    }
+    h2 {
+        margin-left: 5%;
+        font-size: 1.6rem;
+    }
+    .input, select {
+        width: 80%;
+    }
+    textarea {
+        width: 90%;
+    }
+    .next-trip {
+        width: 100%;
+        margin-left: 5px;
+    }
+    .next-trip img {
+        display: block;
+        width: 100%;
+        height: 80%;
+        margin: 0px;
+    }
+    label, .linear, .phone-number, .guets, .depart,
+    .date, .card, .countries, .insurance   {
+        margin-right: 0px;
+        padding:  0px;
+    }
+    
+    /* * { outline: 1px red solid !important; visibility: visible !important }  */
+}
+@media(min-width:601px) and (max-width: 670px){
+    h1 {
+        font-size: 2.8rem;
+    }
+    form {
+        text-align: start;
+        font-size: 1.2rem;
+        padding: 20px 0px;
+        
+    }
+    
+    .next-trip {
+        width: 100%;
+        margin-left: 1%;
+    }
+    .next-trip img {
+        display: block;
+        width: 99%;
+        height: 80%;
+        margin: 0px;
+    }
+}
+@media(min-width:671px) and (max-width: 1020px){
+    h1 {
+        font-size: 3rem;
+    }
+    .next-trip {
+        margin-left: 15%;
+    }
+}
