@@ -153,6 +153,11 @@ footer p {
 .contact-icons a {
     padding: 30px 15px 0 15px;
 }
+/* ///////////////////////////// */
+.slideIn {
+    margin: 0 ;
+}
+
 /* Screens Friendly */
 @media(max-width:600px) {
     nav {
