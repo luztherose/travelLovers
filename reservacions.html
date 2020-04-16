@@ -51,7 +51,7 @@
                 <p class="insurance"> Do you need extra insurance: <input type="radio" name="insurance" value="y">Yes 
                     <input type="radio" name="insurance" value="n">No
                 </p>
-                <h2>Payment</h2>
+                <h2 id="payment">Payment</h2>
                 <label for="name">Name of Cardholder:</label>
                 <input type="text" class="input card" placeholder="Luz Smith"><br>
                 <label for="card ">Credit Card Number:</label>
@@ -63,7 +63,7 @@
                 <p>Comment: <br> <textarea cols="50" rows="10"></textarea> </p>
                 <button type="Submit" class="submitButton" value="Submit Query">Submit</button>
             </form>
-                <h2 class="nex-trip-heading">Get inspiration for your next trip </h2>
+                <h2 class="nex-trip-heading" id="nextDestination">Get inspiration for your next trip </h2>
                 <div class="next-trip">
                     <div>
                         <p class="cities" id="cityName">Las Vegas, U.S</p>
@@ -73,26 +73,6 @@
                         <button class="slideIn" onclick="previousButton() ">Previous</button>
                         <button class="slideIn" onclick="nextButton()">Next</button>
                     </div>
-                    <!-- <div>
-                        <img src="images/reservation2.jpg" alt="">
-                        <p class="cities">Punta Cana, RD</p>
-                    </div>
-                    <div>
-                        <img src="images/franceLouvreMuseum.jpg" alt="">
-                        <p class="cities">Paris, France</p>
-                    </div>
-                    <div>
-                        <img src="images/eiffelTower.jpg" alt="">
-                        <p class="cities">Paris, France</p>
-                    </div>
-                    <div>
-                        <img src="images/espanacathe.jpg " alt="">
-                        <p class="cities">Barcelona, Spain</p>
-                    </div>
-                    <div>
-                        <img src="images/amsterdamCanals.jpg" alt="">
-                        <p class="cities">Amsterdam, the Netherlands</p>
-                    </div> -->
             </div>
         </main>
         <footer>
@@ -108,6 +88,6 @@
             </span>
             <p> Copyright &copy; 2020 Travel Lovers. All Rights Reserved.</p>
         </footer> 
-        <script src="JS/script.js"></script>
+        <script src="JS/reservation.js"></script>
 </body>
 </html>
