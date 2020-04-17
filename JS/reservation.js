@@ -32,6 +32,7 @@ function nextButton() {
     nextPic.src = gallery[num];
     city.innerHTML = cityName[num];
     destination.innerHTML = nextDestination[num];
+
     //Adding a class with the setAttribute method, changing color in CSS
     destination.setAttribute("class", "changeColor");
 }
@@ -54,3 +55,21 @@ function previousButton() {
 let payment = document.getElementById("payment");
 payment.innerHTML = "Make your payment!";
 
+// Hide Reservation Form
+
+const buttonHideForm = document.getElementById("hideForm");
+const reservationForm = document.querySelector("form");
+const buttonShowForm =  document.getElementById("showForm");
+
+buttonHideForm.addEventListener("click", () => {
+    reservationForm.style.display = "none";
+    buttonShowForm.style.display = "block";
+    buttonHideForm.style.display = "none"
+});
+
+// Show Reservation Form 
+buttonShowForm.addEventListener("click", () => {
+    reservationForm.style.display = "block";
+    buttonShowForm.style.display = "none";
+    buttonHideForm.style.display = "block"
+});
