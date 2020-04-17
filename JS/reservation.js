@@ -32,7 +32,8 @@ function nextButton() {
     nextPic.src = gallery[num];
     city.innerHTML = cityName[num];
     destination.innerHTML = nextDestination[num];
-
+    //Adding a class with the setAttribute method, changing color in CSS
+    destination.setAttribute("class", "changeColor");
 }
 function previousButton() {
     let nextPic = document.getElementById("picGallery");

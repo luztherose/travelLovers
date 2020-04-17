@@ -1,3 +1,7 @@
+.changeColor {
+    color: orangered;
+    text-align: center;
+}
 
 body {
     font-family: 'Montserrat';
@@ -63,8 +67,8 @@ label {
     font-size: 15px;
 }
 .next-trip img {
-    width: 480px;
-    height: 480px;
+    width: 450px;
+    height: 400px;
     margin: 0px;
 }
 .next-trip {
