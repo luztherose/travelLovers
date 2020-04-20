@@ -57,19 +57,22 @@ payment.innerHTML = "Make your payment!";
 
 // Hide Reservation Form
 
-const buttonHideForm = document.getElementById("hideForm");
+const formButton = document.getElementById("hideForm");
 const reservationForm = document.querySelector("form");
 const buttonShowForm =  document.getElementById("showForm");
 
-buttonHideForm.addEventListener("click", () => {
-    reservationForm.style.display = "none";
-    buttonShowForm.style.display = "block";
-    buttonHideForm.style.display = "none"
+formButton.addEventListener("click", () => {
+    if (reservationForm.style.display == "none") {
+        formButton.textContent = "Hide Form";
+        reservationForm.style.display = "block";
+        formButton.classList.remove("showForm");
+        // Adding a tooltip
+        formButton.title = "Hide the Reservation Form";
+    } else {
+        formButton.innerHTML = "Show Form";
+        formButton.title = "Show the Reservation Form";
+        reservationForm.style.display = "none";
+        formButton.setAttribute("class", "showForm");
+    }
 });
 
-// Show Reservation Form 
-buttonShowForm.addEventListener("click", () => {
-    reservationForm.style.display = "block";
-    buttonShowForm.style.display = "none";
-    buttonHideForm.style.display = "block"
-});
