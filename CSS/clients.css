@@ -7,9 +7,11 @@ section img {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    
 }
 #central-image img {
     margin-left: 4%;
+    box-shadow: 15px 10px 2px 7px lightcoral;
 }
 
 h1 {
