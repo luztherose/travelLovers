@@ -6,6 +6,7 @@ section img {
 #central-image {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 #central-image img {
     margin-left: 4%;
