@@ -9,7 +9,7 @@ let width = window.matchMedia("(max-width:1020px)");
 
 // This function change the color of the images to grey and it makes the central image a bit larger in big screens and resize it in small screens
 
-function firstSectionCentralImg() {
+function ChangeImagesColorToGray() {
     h1Heading.innerHTML = "Life in Black & White!";
     h1Heading.style.fontFamily = "cursive";
     h1Heading.style.color = "black";
@@ -23,16 +23,13 @@ function firstSectionCentralImg() {
         centralImg.src = "images/rainbow-baby.jpg";
         centralImg.style.filter = "none"
     }
-    function reSizeImage(width) {
-        if (width.matches) { // If media query matches
-            centralImg.style.width = "", height = "";
-        }
+    if (width.matches) { // If media query matches
+        centralImg.style.width = "", height = "";
     }
-    reSizeImage(width);// Call function at run time
 }
 // This function turn the color of the images back
 
-function backToColors() {
+function RevomeImagesFilter() {
     centralImg.title = "Add Color to Life";
     h1Heading.innerHTML = "Life is Better with Colors!";
     h1Heading.style.fontFamily = "cursive";
@@ -49,9 +46,9 @@ function backToColors() {
 // Listining for events
 centralImg.addEventListener("click", () => {
     if (h2Heading.style.color != "tomato") {
-        firstSectionCentralImg();
+        ChangeImagesColorToGray();
     } else {
-        backToColors()
+        RevomeImagesFilter();
     }
 });
 
