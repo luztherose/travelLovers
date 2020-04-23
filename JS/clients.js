@@ -6,10 +6,8 @@ let h2Heading = document.querySelector("h2");
 let h1Heading = document.querySelector("h1");
 // Add @media queries
 let width = window.matchMedia("(max-width:1020px)");
-
 // This function change the color of the images to grey and it makes the central image a bit larger in big screens and resize it in small screens
-
-function ChangeImagesColorToGray() {
+function changeImagesColorToGray() {
     h1Heading.innerHTML = "Life in Black & White!";
     h1Heading.style.fontFamily = "cursive";
     h1Heading.style.color = "black";
@@ -28,8 +26,7 @@ function ChangeImagesColorToGray() {
     }
 }
 // This function turn the color of the images back
-
-function RevomeImagesFilter() {
+function revomeImagesFilter() {
     centralImg.title = "Add Color to Life";
     h1Heading.innerHTML = "Life is Better with Colors!";
     h1Heading.style.fontFamily = "cursive";
@@ -42,7 +39,6 @@ function RevomeImagesFilter() {
     centralImg.src = "images/photo8.jpg";
     centralImg.style.filter = "grayscale(100%)";
 }
-
 // Listining for events
 centralImg.addEventListener("click", () => {
     if (h2Heading.style.color != "tomato") {
@@ -51,4 +47,3 @@ centralImg.addEventListener("click", () => {
         RevomeImagesFilter();
     }
 });
-
