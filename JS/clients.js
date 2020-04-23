@@ -45,8 +45,8 @@ function revomeImagesFilter() {
 // Listining for events
 centralImg.addEventListener("click", () => {
     if (h2Heading.style.color != "tomato") {
-        ChangeImagesColorToGray();
+        changeImagesColorToGray();
     } else {
-        RevomeImagesFilter();
+        revomeImagesFilter();
     }
 });
