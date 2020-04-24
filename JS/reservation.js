@@ -32,34 +32,32 @@ function nextButton() {
     nextPic.src = gallery[num];
     city.innerHTML = cityName[num];
     destination.innerHTML = nextDestination[num];
-
     //Adding a class with the setAttribute method, changing color in CSS
     destination.setAttribute("class", "changeColor");
 }
+
 function previousButton() {
     let nextPic = document.getElementById("picGallery");
     let city = document.getElementById("cityName");
     let destination = document.getElementById("nextDestination");
     num = num - 1;
     if (num < 0) {
-        num = gallery.length -1;
-        num += cityName.length -1;
-        num += nextDestination.length -1;
+        num = gallery.length - 1;
+        num += cityName.length - 1;
+        num += nextDestination.length - 1;
         num = 0;
     }
     nextPic.src = gallery[num];
     city.innerHTML = cityName[num];
     destination.innerHTML = nextDestination[num];
 }
-//Interacting with the DOM
+
 let payment = document.getElementById("payment");
 payment.innerHTML = "Make your payment!";
-
 // Hide Reservation Form
-
 const formButton = document.getElementById("hideForm");
 const reservationForm = document.querySelector("form");
-const buttonShowForm =  document.getElementById("showForm");
+const buttonShowForm = document.getElementById("showForm");
 
 formButton.addEventListener("click", () => {
     if (reservationForm.style.display == "none") {
