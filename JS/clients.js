@@ -1,6 +1,7 @@
 //  Seclecting Elements
 let centralImg = document.querySelector("#central-image img");
 centralImg.style.filter = "grayscale(100%)";
+centralImg.title = "See Life in Black & White";
 let allImages = document.querySelectorAll("img");
 let h2Heading = document.querySelector("h2");
 let h1Heading = document.querySelector("h1");
@@ -15,7 +16,7 @@ function changeImagesColorToGray() {
     h2Heading.style.color = "tomato";
     if (centralImg) {
         centralImg.style.width = "40%", height = "100%";
-        centralImg.title = "Add colors to life!";
+        centralImg.title = "Add Color to Life";
         for (let i = 0; i < allImages.length; i++) {
             allImages[i].style.filter = "grayscale(100%)";
         }
@@ -29,7 +30,7 @@ function changeImagesColorToGray() {
 
 // This function turn the color of the images back
 function revomeImagesFilter() {
-    centralImg.title = "Add Color to Life";
+    centralImg.title = "See Life in Black & White";
     h1Heading.innerHTML = "Life is Better with Colors!";
     h1Heading.style.fontFamily = "cursive";
     h1Heading.style.color = "red";

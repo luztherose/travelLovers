@@ -12,16 +12,14 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     width: 1024px;
     height:940px ;
     margin: auto;
-    
 }
+
 body {
     font-family:'Montserrat' ;
     font-size: 20px;
     background-color: #FFF0E7;
 }
-#logo {
-    width: 30px;
-}
+
 header {
     background-image: url("../images/header.jpg");
     height: 80vh;
@@ -30,43 +28,50 @@ header {
     background-position-y:80%;
     background-attachment: fixed;
 }
-nav {
+
+nav, ul, #main-content  {
     display: flex;
+}
+
+nav {
     flex-direction: row;
     height: 105px;
     justify-content: space-between;
     background-color: #FFF0E7 ;
 }
-ul {
-    display: flex;
-}
+
 li {
     list-style-type: none;
     padding: 15px 10px 15px 10px;
     font-size: 24px;
     font-weight: bold;
 }
+
 li a {
     text-decoration: none;
     color: #4A455C;
 }
+
 li a:hover {
     background-color: blue;
     color: white;
 }
+
 .rigth-space a {
     padding-right: 20px;
 }
+
 #logo {
     width: 140px;
     height: 105px;
     margin-top: -30px;
     margin-left: auto;
 }
+
 h1, header p {
     text-align: center;
-    
 }
+
 h1 {
     font-family: 'Cormorant Garamond';
     font-size: 7rem;
@@ -74,8 +79,8 @@ h1 {
     padding-top: 100px;
     margin-right: 260px;
     margin-bottom: -20px;
-    
 }
+
 header p {
     font-family: cursive;
     font-size: 2.8rem;
@@ -83,6 +88,7 @@ header p {
     padding-left: 20px;
     font-weight: bolder;
 }
+
 .slidein {
     animation-duration: 3s;
     animation-name: slidein;
@@ -93,7 +99,6 @@ header p {
     from {
     margin-left: 10%;
     width: 200%; 
-    
     }
 
     to {
@@ -101,24 +106,27 @@ header p {
     width: 100%;
     }
 }
-/* ///////////////////////////////////////// */
+
 #main-content {
     width: 900px;
     height: 600px;
-    display: flex;
 }
+
 #main-text {
     width: 600px;
 }
+
 .space {
     margin-top: 20px;
 }
+
 h2 {
     font-size: 3rem;
     color: rgb(83, 83, 85);
     font-weight: 500;
     margin: 20px 10px;
 }
+
 #aside {
     width: 300px;
     margin-left: 50px;
@@ -130,13 +138,14 @@ h3 {
     padding-top: 40px;
     padding-bottom: 25px;
     padding-left: 20px;
-    
 }
+
 footer {
     height: 195px;
     background-image: linear-gradient(rgb(250, 250, 125), white, blue);
     background-size: cover;
 }
+
 footer p {
     font-family: cursive;
     font-size: 15px;
@@ -145,15 +154,16 @@ footer p {
     padding-top: 50px;
     color: white;
 }
+
 .contact-icons  {
     display: flex;
     justify-content: center;
-    
 }
+
 .contact-icons a {
     padding: 30px 15px 0 15px;
 }
-/* ///////////////////////////// */
+
 .slideIn {
     margin: 0 ;
 }
@@ -167,11 +177,13 @@ footer p {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     ul {
         display: flex;
         flex-wrap: wrap;
         padding-top: 15px;
     }
+
     li {
         font-size: 1.1rem;
         padding: 5px 10px;
@@ -179,90 +191,95 @@ footer p {
         margin-bottom: 65px;
     }
 
-    /* ///////////////////// */
     #wrapper {
         width: auto;
         height:auto;
         margin: auto;
     }
-    
+
     header {
         height: 50vh;
         background-attachment: scroll;
     }
+
     h1 {
         font-size: 2.3rem;
         padding-top: 10px;
         margin-right: 0px;
         margin-bottom: -10px;
-        
     }
+
     header p {
         font-size: 1.1rem;
         padding-left: 20px;
     }
+
     .slidein {
         animation-duration: 3s;
         animation-name: slidein;
         animation-iteration-count: 1;
     }
-    
+
     @keyframes slidein {
         from {
-        margin-left: 8%;
-        width: 130%; 
+        margin-left: auto;
+        width: auto; 
         
         }
     
         to {
-        margin-left: 0%;
-        width: 100%;
+        margin-left: auto;
+        width: auto;
         }
     }
-/* ///////////////////////////////////////// */
     #main-content {
         width: 90%;
         height: 30%;
         display: block;
     }
+
     #main-text {
         width: 100%;
     }
+
     .space {
         margin-top: 0px;
     }
+
     h2 {
         font-size: 1.6rem;
         margin: 30px 0px 0px 30px;
     }
-    
+
     #main-text video, #main-text img {
         width: 100%;
         margin-left: 6%;
     }
-    
+
     #aside {
         width: 100%;
         margin-left: 8%;
     }
+
     h3 {
         font-size: 1.3rem;
         padding-top: 20px;
         padding-bottom: 0px;
         padding-left: 14%;
     }
+
     footer {
         margin-top: 5%;
         margin-bottom: 0;
         height: 28%;
     }
+
     footer p {
         font-size: 1rem;
         padding-top: 30px;
         padding-bottom: 10px;
     }
 }
-
 @media(min-width:601px )and (max-width:732px) {
     nav {
         height: 145px;
@@ -271,11 +288,13 @@ footer p {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     ul {
         display: flex;
         flex-wrap: wrap;
         padding-top: 15px;
     }
+
     li {
         font-size: 1.3rem;
         padding: 5px 10px;
@@ -293,6 +312,7 @@ footer p {
         height: 60vh;
         background-attachment: scroll;
     }
+
     h1 {
         font-size: 2.8rem;
         padding-top: 10px;
@@ -300,53 +320,76 @@ footer p {
         margin-bottom: -10px;
         
     }
+
     header p {
         font-size: 1.3rem;
         padding-left: 20px;
     }
+
+    @keyframes slidein {
+        from {
+        margin-left: auto;
+        width: auto; 
+        
+        }
+    
+        to {
+        margin-left: auto;
+        width: auto;
+        }
+    }
+
     h2 {
         font-size: 1.9rem;
     }
+
     #main-content {
         width: 90%;
         height: 30%;
         display: block;
     }
+
     #main-text video, #main-text img {
         width: 90%;
         margin-left: 4%;
     }
     
     #aside {
-        width: 100%;
-        margin-left: 28%;
+        width: 90%;
+        margin-left: 18%;
     }
+
     h3 {
         font-size: 1.9rem;
         padding-top: 20px;
         padding-bottom: 0px;
         padding-left: 14%;
     }
+     /* * { outline: 1px red solid !important; visibility: visible !important }  */
 }
 @media(min-width:733px )and (max-width:1020px) { 
     li {
         font-size: 1.3rem;
     }
+
     header {
         height: 70vh;
     }
+
     h1 {
         font-size: 4.5rem;
     }
+
     header p {
         font-size: 2rem;
     }
+
     .slidein {
         animation-duration: 0s;
         animation-name: none;
         animation-iteration-count: 0;
     }
-    
+
     @keyframes slidein {
         from {
         margin-left: 0;
@@ -359,6 +402,7 @@ footer p {
         width: 0;
         }
     }
+
     h2 {
         font-size: 2.5rem;
     }
@@ -374,9 +418,11 @@ footer p {
         height: 30%;
         display: block;
     }
+
     #main-text video, #main-text img {
         margin-left: 10%;
     }
+    
     #aside {
         width: 80%;
         margin-left: 30%;

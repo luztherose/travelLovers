@@ -2,12 +2,13 @@
     width: 1200px;
     margin: auto;
 }
-body {
-    font-family:'Montserrat' ;
-    font-size: 20px;
-    color:#4A455C;
 
+body {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #4A455C;
 }
+
 h1 {
     font-family: 'Cormorant Garamond';
     font-size: 45px;
@@ -16,54 +17,60 @@ h1 {
     padding-bottom: 40px;
     padding-top: 80px;
     color: blue;
-    box-shadow:10px 10px 10px 0px rgb(248, 248, 118);
+    box-shadow: 10px 10px 10px 0px rgb(248, 248, 118);
 }
+
 .bold {
     font-weight: bold;
 }
+
 h2 {
     font-size: 35px;
     text-align: center;
 }
+
 .luz-section table {
     font-weight: bold;
     padding-top: 40px;
     margin-left: 40px;
     margin-top: 40px;
-
 }
+
 .luz-section img {
     padding-top: 80px;
 }
 
-.planners  {
+.planners {
     display: flex;
     margin-bottom: 40px;
 }
+
 .personalInfo {
     margin-top: 8%;
     margin-left: 4%;
 }
+
 .planners:first-child {
     margin-right: 20px;
 }
+
 .luz-section {
     display: flex;
     justify-content: center;
 }
+
 @media(max-width: 600px) {
     #wrapper {
         width: 90%;
         margin: auto;
     }
-    
     h1 {
         font-size: 1.8rem;
         text-align: center;
         padding-right: 20px;
         padding-bottom: 20px;
         padding-top: 20px;
-        box-shadow:5px 5px 5px 0px rgb(248, 248, 118);
+        box-shadow: 5px 5px 5px 0px rgb(248, 248, 118);
     }
     h2 {
         font-size: 1.8rem;
@@ -81,6 +88,7 @@ h2 {
         display: block;
     }
 }
+
 @media(min-width: 601px) and (max-width: 1220px) {
     #wrapper {
         width: 90%;
@@ -99,7 +107,6 @@ h2 {
     .map {
         width: 100%;
     }
-    
     .luz-section img {
         padding-top: 20px;
     }
